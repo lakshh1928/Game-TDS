@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header id="header">
+        <img src="logo.png" alt="Logo" id="logo">
+        <div id="social-icons">
+            <a href="https://discord.gg/YF22Vbcy9G"><div id="dc" class="social-icon"></div></a>
+            <a href="https://www.instagram.com/lucifer.cpm/"><div id="ig" class="social-icon"></div></a>
+            <button id="htp">How to Play</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="player-setup">
+            <h2>Enter Player Names</h2>
+            <div id="players">
+                <!-- Player name inputs will be added here -->
+            </div>
+            <button id="add-player">Add Player</button>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <div id="wheel-container" class="hidden">
+            <h2>Spin the Wheel</h2>
+            <div id="wheel">
+                <!-- 🎯 FIX: Adding a sample wheel representation -->
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="95" fill="yellow" stroke="black" stroke-width="5"/>
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="18px">🎡 Spin Me</text>
+                </svg>
+            </div>
+            <button id="spin-button">Spin</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        &copy; 2025 Your Website | All Rights Reserved
+    </footer>
+
+    <!-- How to Play Modal -->
+    <div id="htp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>How to Play</h2>
+            <p>1️⃣ Players take turns spinning the wheel.</p>
+            <p>2️⃣ If it lands on you, choose between Truth or Dare.</p>
+            <p>3️⃣ Answer truthfully or complete the dare.</p>
+            <p>4️⃣ The game continues until all players have had a turn!</p>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
